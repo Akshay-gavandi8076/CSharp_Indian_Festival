@@ -1,0 +1,36 @@
+﻿<Window x:Class="IndianFestival.Shivratri"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IndianFestival"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="CanMinimize"
+        Closing="Window_Closing"
+        Title="Maha Shivratri" Height="700" Width="1260" Background="#fff0e6">
+    <Grid>
+        <StackPanel Margin="0,5,0,0" Orientation="Vertical" Background="#4d004d" d:LayoutOverrides="LeftMargin, RightMargin" Height="56" VerticalAlignment="Top">
+            <TextBlock Text="Maha Shivratri" TextAlignment="Center"  FontSize="31" Foreground="White" Height="56" Margin="0,0,0,0" HorizontalAlignment="Left" Width="1252" d:LayoutOverrides="LeftMargin, RightMargin" FontFamily="Segoe Print" FontWeight="Bold"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Background="#ffa366" Margin="0,61,0,0" Width="200">
+            <Button Content="Introduction" Click="Btn_Shivratri_intro"   Height="35" Background="Transparent" BorderBrush="{x:Null}" FontFamily="Segoe Print" FontSize="18"/>
+            <Button Content="History" Click="Btn_Shivratri_History" Height="35" Background="Transparent" BorderBrush="{x:Null}" FontFamily="Segoe Print" FontSize="18"/>
+            <Button Content="Significance" Click="Btn_Shivratri_Significance" Height="35" Background="Transparent" BorderBrush="{x:Null}" FontFamily="Segoe Print" FontSize="18"/>
+            <Button Content="Story" Click="Btn_Shivratri_Story" Height="35" Background="Transparent" BorderBrush="{x:Null}" FontFamily="Segoe Print" FontSize="18"/>
+            <Button Content="Description" Click="Btn_Shivratri_Description" Height="35" Background="Transparent" BorderBrush="{x:Null}" FontFamily="Segoe Print" FontSize="18"/>
+            <!--<Button Content="Quiz" Height="35" Background="Transparent" BorderBrush="{x:Null}"/>-->
+        </StackPanel>
+        <StackPanel Margin="233,81,0,0" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Left" Width="992">
+            <TextBlock x:Name="tb_Shivratri_head" TextWrapping="Wrap" FontSize="20" FontFamily="Segoe Print" FontWeight="Bold" Height="32" Margin="0,0,0,0"/>
+        </StackPanel>
+        <Grid Margin="214,118,317,25">
+            <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                <TextBlock x:Name="fest_Shivratri_info" TextWrapping="Wrap" TextAlignment="Justify" FontFamily="Segoe Print" FontSize="14" Width="666"/>
+            </ScrollViewer>
+        </Grid>
+        <Image x:Name="img_Shivratri_info" HorizontalAlignment="Right" Margin="0,118,28,0" Width="270" Stretch="Fill" Height="366" VerticalAlignment="Top" />
+        <TextBlock x:Name="img_Shivratri_TB" HorizontalAlignment="Right" Margin="0,489,27,0" FontFamily="Segoe Print" TextWrapping="Wrap" FontSize="14" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" Width="270" Height="83"/>
+    </Grid>
+</Window>

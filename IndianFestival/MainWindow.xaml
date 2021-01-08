@@ -1,0 +1,107 @@
+﻿<Window x:Class="IndianFestival.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IndianFestival"
+        xmlns:Resx="clr-namespace:IndianFestival.Properties"
+        mc:Ignorable="d"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanMinimize"
+        Title="Popular Indian Festivals" Height="700" Width="1100" Background="#ffe7b3">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="image/bg7.jpg" Stretch="UniformToFill"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="30*"/>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="400*"/>
+            <ColumnDefinition Width="30*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="69*"/>
+            <RowDefinition Height="231"/>
+            <RowDefinition Height="137*"/>
+            <RowDefinition Height="13*"/>
+
+        </Grid.RowDefinitions>
+        <StackPanel Margin="0,5,0,0" Orientation="Horizontal" Background="Transparent" Grid.ColumnSpan="5" d:LayoutOverrides="LeftMargin, RightMargin" Grid.Column="0" Grid.Row="0">
+            <Button x:Name="button" Click="Btn_Quiz" Content="{x:Static Resx:Resources.quiz}" Background="#263238" Foreground="White" FontSize="15" Margin="20,50,0,0" VerticalAlignment="Top" Height="30" HorizontalAlignment="Left" Width="102"/>
+            <StackPanel Margin="20,25" Orientation="Vertical" Width="800" d:LayoutOverrides="Height">
+                <TextBlock TextAlignment="Center" FontSize="48" Foreground="White" FontFamily="Segoe Print" FontWeight="Bold" Height="84" d:LayoutOverrides="Height"><InlineUIContainer/><Run Text="Popular India"/><Run Text="n Festivals"/></TextBlock>
+
+            </StackPanel>
+
+        </StackPanel>
+        <!--<StackPanel Orientation="Vertical" Height="38" Margin="0,0,0,14" VerticalAlignment="Bottom" Grid.ColumnSpan="3" d:LayoutOverrides="VerticalAlignment, LeftMargin, RightMargin">
+            <Label Content="To see the details select one option" FontSize="15" Foreground="Gray" FontStyle="Italic" Height="39" Margin="0,0,370,0"/>
+        </StackPanel>-->
+        <StackPanel Margin="118,29,20,29" Background="#ffb74d" Orientation="Vertical" Grid.Row="1" Grid.Column="1">
+
+            <Button Height="110" Click="Btn_Diwali" HorizontalAlignment="Center" Width="175" Margin="12,15,12,0">
+                <Image Source="image/diwali.jpg" Width="175" Stretch="Fill" ToolTip="{x:Static Resx:Resources.ClickButton}" Height="110"/>
+            </Button>
+            <StackPanel Margin="17,10,17,0" Orientation="Vertical" Height="30" Width="175">
+                <Button Content="Diwali" Click="Btn_Diwali_Text" Height="30" Background="Black" Foreground="White" FontWeight="Bold" Margin="0" HorizontalAlignment="Left" Width="175" FontFamily="Segoe Print" FontSize="16"/>
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="69,29,70,29" Background="#ffb74d" Orientation="Vertical" Grid.Row="1" Grid.Column="2">
+
+            <Button Height="110" Click="Btn_Navratri" HorizontalAlignment="Center" Width="175" Margin="12,15,12,0">
+                <Image Source="image/Navaratri.jpg" Width="175" Stretch="Fill" ToolTip="{x:Static Resx:Resources.ClickButton}" Height="110"/>
+            </Button>
+            <StackPanel Margin="17,10,17,0" Orientation="Vertical" Height="30" Width="175">
+                <Button Content="Navaratri" Click="Btn_Navratri_Text" Height="30" Background="Black" Foreground="White" FontWeight="Bold" Margin="0" HorizontalAlignment="Left" Width="175" FontFamily="Segoe Print" FontSize="16"/>
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="20,29,118,29" Background="#ffb74d" Orientation="Vertical" Grid.Row="1" Grid.Column="3">
+
+            <Button Height="110" Click="Btn_Ramjan" HorizontalAlignment="Center" Width="175" Margin="12,15,12,0">
+                <Image Source="image/Ramjan.jpg" Width="175" Stretch="Fill" ToolTip="{x:Static Resx:Resources.ClickButton}" Height="110"/>
+            </Button>
+            <StackPanel Margin="17,10,17,0" Orientation="Vertical" Height="30" Width="175">
+                <Button Content="Ramdan" Click="Btn_Ramjan_Text" Height="30" Background="Black" Foreground="White" FontWeight="Bold" Margin="0" HorizontalAlignment="Left" Width="175" FontFamily="Segoe Print" FontSize="16"/>
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="118,12,20,0" Background="#ffb74d" Orientation="Vertical" Grid.Row="2" Grid.Column="1" Height="173" VerticalAlignment="Top">
+
+            <Button Height="110" Click="Btn_Shivratri" HorizontalAlignment="Center" Width="175" Margin="12,15,12,0">
+                <Image Source="image/Maha_Shivaratri.jpg" Width="175" Stretch="Fill" ToolTip="{x:Static Resx:Resources.ClickButton}" Height="110"/>
+            </Button>
+            <StackPanel Margin="17,10,17,0" Orientation="Vertical" Height="30" Width="175">
+                <Button Content="Maha Shivaratri" Click="Btn_Shivratri_Text" Height="30" Background="Black" Foreground="White" FontWeight="Bold" Margin="0" HorizontalAlignment="Left" Width="175" FontFamily="Segoe Print" FontSize="16"/>
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="69,12,70,0" Background="#ffb74d" Orientation="Vertical" Grid.Row="2" Grid.Column="2" Height="173" VerticalAlignment="Top">
+
+            <Button Height="110" Click="Btn_Vijayadashmi" HorizontalAlignment="Center" Width="175" Margin="12,15,12,0">
+                <Image Source="image/Dasara.jpg" Width="175" Stretch="Fill" ToolTip="{x:Static Resx:Resources.ClickButton}" Height="110"/>
+            </Button>
+            <StackPanel Margin="17,10,17,0" Orientation="Vertical" Height="30" Width="175">
+                <Button Content="Vijayadashmi" Click="Btn_Vijayadashmi_Text" Height="30" Background="Black" Foreground="White" FontWeight="Bold" Margin="0" HorizontalAlignment="Left" Width="175" FontFamily="Segoe Print" FontSize="16"/>
+
+            </StackPanel>
+        </StackPanel>
+        <StackPanel Margin="20,12,118,0" Background="#ffb74d" Orientation="Vertical" Grid.Row="2" Grid.Column="3" Height="173" VerticalAlignment="Top">
+
+            <Button Height="110" Click="Btn_Ganesh_Chaturthi" HorizontalAlignment="Center" Width="175" Margin="12,15,12,0">
+                <Image Source="image/Ganesh_Chaturthi.jpg" Width="175" Stretch="Fill" ToolTip="{x:Static Resx:Resources.ClickButton}" Height="110"/>
+            </Button>
+            <StackPanel Margin="17,10,17,0" Orientation="Vertical" Height="30" Width="175">
+                <Button Content="Ganesh Chaturthi" Click="Btn_Ganesh_Text" Height="30" Background="Black" Foreground="White" FontWeight="Bold" Margin="0" HorizontalAlignment="Left" Width="175" FontFamily="Segoe Print" FontSize="16"/>
+
+            </StackPanel>
+        </StackPanel>
+
+
+        <!--<Button x:Name="button" Click="Btn_Quiz" Content="Quiz" Grid.Column="3" Background="Black" Foreground="White" FontSize="15" Margin="182,0,0,21" VerticalAlignment="Bottom" HorizontalAlignment="Left" Height="30" Width="75"/>-->
+
+
+    </Grid>
+</Window>

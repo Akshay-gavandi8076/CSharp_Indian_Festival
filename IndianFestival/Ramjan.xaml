@@ -1,0 +1,35 @@
+﻿<Window x:Class="IndianFestival.Ramjan"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:IndianFestival"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="CanMinimize"
+        Closing="Window_Closing"
+        Title="Ramdan" Height="700" Width="1260" Background="#fff0e6">
+    <Grid>
+        <StackPanel Margin="0,5,0,0" Orientation="Vertical" Background="#4d004d" d:LayoutOverrides="LeftMargin, RightMargin" Height="56" VerticalAlignment="Top">
+            <TextBlock Text="Ramdan" TextAlignment="Center"  FontSize="31" Foreground="White" Height="56" Margin="0,0,0,0" HorizontalAlignment="Left" Width="1252" d:LayoutOverrides="LeftMargin, RightMargin" FontFamily="Segoe Print" FontWeight="Bold"/>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Background="#ffa366" Margin="0,61,0,0" Width="200">
+            <Button Content="Introduction" Click="Btn_Ramjan_intro"  Height="35" Background="Transparent" FontFamily="Segoe Print" BorderBrush="{x:Null}" FontSize="18"/>
+            <Button Content="History" Click="Btn_Ramjan_History" Height="35" Background="Transparent" BorderBrush="{x:Null}" FontFamily="Segoe Print" FontSize="18"/>
+            <Button Content="Religious Significance" Click="Btn_Ramjan_Religious"  Height="35" Background="Transparent" BorderBrush="{x:Null}" FontSize="18" FontFamily="Segoe Print"/>
+            <Button Content="Cultural Practices" Click="Btn_Ramjan_Cultural"  Height="35" Background="Transparent" BorderBrush="{x:Null}" FontSize="18" FontFamily="Segoe Print"/>
+            <!--<Button Content="Quiz" Height="35" Background="Transparent" BorderBrush="{x:Null}"/>-->
+        </StackPanel>
+        <StackPanel Margin="233,81,0,0" Orientation="Vertical" VerticalAlignment="Top" HorizontalAlignment="Left" Width="992">
+            <TextBlock x:Name="tb_Ramjan_head" FontFamily="Segoe Print" TextWrapping="Wrap" FontSize="20" FontWeight="Bold" Height="32" Margin="0,0,0,0"/>
+        </StackPanel>
+        <Grid Margin="214,118,317,25">
+            <ScrollViewer VerticalScrollBarVisibility="Hidden">
+                <TextBlock x:Name="fest_Ramjan_info" TextWrapping="Wrap" FontFamily="Segoe Print" TextAlignment="Justify" FontSize="14" Width="666"/>
+            </ScrollViewer>
+        </Grid>
+        <Image x:Name="img_Ramjan_info" HorizontalAlignment="Right" Margin="0,118,28,0" Width="270" Stretch="Fill" Height="366" VerticalAlignment="Top" />
+        <TextBlock x:Name="img_Ramjan_TB" HorizontalAlignment="Right" Margin="0,489,27,0" FontFamily="Segoe Print" FontSize="14" TextWrapping="Wrap" VerticalAlignment="Top" FontWeight="Bold" FontStyle="Italic" Width="270" Height="83"/>
+    </Grid>
+</Window>
